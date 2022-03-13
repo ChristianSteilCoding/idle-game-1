@@ -1,0 +1,59 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 5;
+}
+
+#main-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#gear-container {
+  width: 100%;
+  text-align: center;
+}
+
+#upgrade-container {
+  width: 100%;
+  text-align: center;
+  border: 2px;
+  border-style: solid;
+}
+
+#gear {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+  animation: rotation 3s infinite linear;
+}
+
+#clicker {
+  height: 50px;
+  width: 100px;
+  border-radius: 10%;
+  border-color: black;
+  background: linear-gradient(to bottom right, black, white);
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#clicker:active {
+  transform: scale(0.95);
+}
+
+#money {
+  text-align: center;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
