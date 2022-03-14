@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Idle Game</title>
+    <title>Spinning Simulator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Idle Game</h1>
+    <h1>Spinning Simulator</h1>
     <div id="main-body">
       <div id="gear-container">
         <p id="money"></p>
+        <p id="spin-speed"></p>
         <img
-          id="gear"
+          id="gear1"
           src="https://cdn.pixabay.com/photo/2016/01/03/11/24/gear-1119298_960_720.png"
           alt="gear"
         />
@@ -21,9 +22,28 @@
           <button id="clicker">Click!</button>
         </div>
       </div>
-      <div id="upgrade-container">
-        <div class="upgrade-div">
-          <button id="upgrade1"></button>
+      <div id="upgrades-container">
+        <div id="research-container">
+          <h2>Research</h2>
+          <button class="research-button" id="research1">
+            Unlock Spinning - Cost: 50
+          </button>
+        </div>
+        <div id="spin-container">
+          <h2>Spinning</h2>
+          <button id="spin-upgrade-button">
+            Upgrade Spin Speed - Cost: 100
+          </button>
+        </div>
+        <div id="gear-selector">
+          <h2>Select Gear</h2>
+          <button class="gear-selector-button">Gear 1</button>
+        </div>
+        <div id="upgrade-container">
+          <h2>Upgrades</h2>
+          <button class="upgrade-button" id="upgrade1"></button>
+          <button class="upgrade-button" id="upgrade2"></button>
+          <button class="upgrade-button" id="upgrade3"></button>
         </div>
       </div>
     </div>

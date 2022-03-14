@@ -16,19 +16,47 @@ p {
   text-align: center;
 }
 
-#upgrade-container {
+#upgrades-container {
   width: 100%;
   text-align: center;
   border: 2px;
   border-style: solid;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
 }
 
-#gear {
+#research-container {
+  width: 25%;
+  border: 2px;
+  border-style: solid;
+}
+
+#spin-container {
+  width: 25%;
+  border: 2px;
+  border-style: solid;
+}
+
+#gear-selector {
+  width: 25%;
+  border: 2px;
+  border-style: solid;
+  border-right: 1px;
+}
+
+#upgrade-container {
+  width: 25%;
+  border: 2px;
+  border-style: solid;
+}
+
+#gear1 {
   width: 200px;
   height: 200px;
   margin: 0 auto;
   display: block;
-  animation: rotation 3s infinite linear;
+  animation: rotation 0s infinite linear;
 }
 
 #clicker {
@@ -47,6 +75,54 @@ p {
 
 #money {
   text-align: center;
+}
+
+.gear-selector-button {
+  height: 50px;
+  width: 98%;
+  border-color: black;
+  background: linear-gradient(to bottom right, gray, white);
+  margin-top: 2px;
+}
+
+.gear-selector-button:active {
+  transform: scale(0.95);
+}
+
+.upgrade-button {
+  height: 50px;
+  width: 98%;
+  border-color: black;
+  background: linear-gradient(to bottom right, gray, white);
+  margin-top: 2px;
+}
+
+.upgrade-button:active {
+  transform: scale(0.95);
+}
+
+.research-button {
+  height: 50px;
+  width: 98%;
+  border-color: black;
+  background: linear-gradient(to bottom right, gray, white);
+  margin-top: 2px;
+}
+
+.research-button:active {
+  transform: scale(0.95);
+}
+
+#spin-upgrade-button {
+  height: 50px;
+  width: 98%;
+  border-color: black;
+  background: linear-gradient(to bottom right, gray, white);
+  margin-top: 2px;
+}
+
+#spin-upgrade-button:active {
+  transform: scale(0.95);
 }
 
 @keyframes rotation {
